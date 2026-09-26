@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="/image/webicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact</title>
+  </head>
+  <body class="overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="w-full bg-[#f2f2f2] sticky top-0 z-50">
+      <div class="max-w-[1400px] mx-auto px-4 h-[65px] flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img src="https://thedesaifoundation.org/wp-content/uploads/2023/12/dflogo.webp" class="h-[50px]" alt="Logo">
+          </a>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex gap-[35px]">
+          <a href="index.html" class="font-semibold text-[18px] text-[#000000] no-underline cursor-pointer">Home</a>
+          <a href="Aboutus.html" class="font-semibold text-[18px] text-[#000000] no-underline cursor-pointer">About Us</a>
+          <a href="gallery.html" class="font-semibold text-[18px] text-[#000000] no-underline cursor-pointer">Gallery</a>
+          <a href="contact.html" class="font-semibold text-[18px] text-[#000000] no-underline cursor-pointer">Contact</a>
+        </nav>
+
+        <!-- Desktop Donate Button -->
+        <button class="hidden md:block bg-[#cf3270] text-[#ffffff] font-bold rounded-full w-[180px] h-[40px] border capitalize md:transition md:duration-300 md:hover:bg-white md:hover:text-[#cf3270]">
+          Donate now
+        </button>
+
+        <!-- Hamburger Icon (mobile only) -->
+        <div class="md:hidden flex flex-col justify-center items-center w-[40px] h-[40px] gap-[5px] cursor-pointer">
+          <span class="block w-[25px] h-[3px] bg-[#000000] rounded"></span>
+          <span class="block w-[25px] h-[3px] bg-[#000000] rounded"></span>
+          <span class="block w-[25px] h-[3px] bg-[#000000] rounded"></span>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="w-full min-h-[280px] md:min-h-[450px] lg:min-h-[650px] bg-[url('./image/teacher-student.png')] bg-center bg-cover bg-no-repeat flex items-center justify-center px-4">
+      <div class="max-w-[600px] text-center">
+        <h1 class="text-[32px] md:text-[50px] lg:text-[60px] font-bold text-[#ffffff] leading-[110%] drop-shadow-lg">
+          Contact Us
+        </h1>
+        <p class="text-center pt-4 text-[13px] md:text-[17px] lg:text-[20px] leading-[140%] text-[#f0f0f0] drop-shadow">
+          Get in touch with us to join hands, support our cause, or inquire about our work – together, we can make a difference.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="w-full py-12 px-4">
+
+      <h1 class="underline decoration-[#cf3270] font-bold text-[26px] md:text-[40px] lg:text-[50px] px-0 md:px-[50px] mt-4">
+        Let's hear from you
+      </h1>
+
+      <div class="max-w-[1000px] mx-auto mt-10">
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
+
+          <div>
+            <label for="fullName" class="block mb-2 text-[15px] font-bold text-gray-700">Full Name</label>
+            <input type="text" id="fullName" placeholder="Full Name"
+              class="w-full rounded-2xl border border-gray-300 bg-white px-4 py-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" />
+          </div>
+
+          <div>
+            <label for="email" class="block mb-2 text-[15px] font-bold text-gray-700">Email Address</label>
+            <input type="email" id="email" placeholder="Please Enter Email Address"
+              class="w-full rounded-2xl border border-gray-300 bg-white px-4 py-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" />
+          </div>
+
+          <div>
+            <label for="phone" class="block mb-2 text-[15px] font-bold text-gray-700">Phone No.</label>
+            <input type="tel" id="phone" placeholder="Phone"
+              class="w-full rounded-2xl border border-gray-300 bg-white px-4 py-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200" />
+          </div>
+
+          <div>
+            <label for="category" class="block mb-2 text-[15px] font-bold text-gray-700">Category</label>
+            <select id="category"
+              class="w-full rounded-2xl border border-gray-300 bg-white px-4 py-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+              <option>Please Choose an Option</option>
+              <option>General Inquiry</option>
+              <option>Support</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+
+          <div class="md:col-span-2">
+            <label for="message" class="block mb-2 text-[15px] font-bold text-gray-700">Message</label>
+            <textarea id="message" rows="5" placeholder="Message"
+              class="w-full resize-none rounded-2xl border border-gray-300 bg-white px-4 py-4 text-sm text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+          </div>
+
+        </form>
+
+        <button type="submit"
+          class="rounded-2xl mt-6 bg-[#cf3270] px-6 py-4 text-sm font-medium tracking-wider text-white uppercase md:transition md:hover:scale-105">
+          Fill Details To Send Message
+        </button>
+      </div>
+
+      <!-- MAP -->
+      <h1 class="text-[24px] md:text-[38px] lg:text-[45px] underline decoration-[#cf3270] font-bold text-center mt-12">
+        You can directly meet us here
+      </h1>
+
+      <div class="w-full mt-6 px-0 md:px-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          class="w-full rounded-xl">
+        </iframe>
+      </div>
+
+      <!-- CONTACT CARDS -->
+      <div class="max-w-[900px] mx-auto mt-10 px-0 md:px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="rounded-2xl border border-[#dbdbdb] p-4 flex items-center gap-3 md:transition md:duration-300 md:hover:scale-105">
+            <div class="flex-shrink-0 w-[55px] h-[55px]">
+              <img src="image/Phone-Call-contact.svg" class="w-full h-full object-contain" alt="">
+            </div>
+            <h1 class="text-[14px] md:text-[15px] font-semibold">+91 0012012012</h1>
+          </div>
+          <div class="rounded-2xl border border-[#dbdbdb] p-4 flex items-center gap-3 md:transition md:duration-300 md:hover:scale-105">
+            <div class="flex-shrink-0 w-[55px] h-[55px]">
+              <img src="image/Loccation-pin-1.svg" class="w-full h-full object-contain" alt="">
+            </div>
+            <h1 class="text-[14px] md:text-[15px] font-semibold">California U.S.A</h1>
+          </div>
+          <div class="rounded-2xl border border-[#dbdbdb] p-4 flex items-center gap-3 md:transition md:duration-300 md:hover:scale-105">
+            <div class="flex-shrink-0 w-[55px] h-[55px]">
+              <img src="image/Email-1-contact.svg" class="w-full h-full object-contain" alt="">
+            </div>
+            <h1 class="text-[14px] md:text-[15px] font-semibold">DEMO@gmail.com</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMMUNITY JOIN -->
+      <div class="max-w-[1200px] mx-auto mt-10 px-0 md:px-4 flex flex-col md:flex-row gap-6 items-center">
+        <div class="flex-1">
+          <h1 class="text-[24px] md:text-[35px] lg:text-[40px] font-bold">Join our community group</h1>
+          <h2 class="text-[16px] md:text-[20px] lg:text-[24px] mt-1">For your interest you can join & help the poor ones.</h2>
+        </div>
+        <div class="w-full md:w-[500px] border border-[#dbdbdb] rounded-2xl flex overflow-hidden">
+          <div class="flex-1 px-4 flex items-center h-[60px]">
+            <h1 class="text-[14px] md:text-[16px] text-gray-500">Enter your email address</h1>
+          </div>
+          <button class="w-[120px] md:w-[150px] h-[60px] bg-[#cf3270] text-[#ffffff] font-bold rounded-r-2xl text-[15px] md:text-[18px] md:transition md:duration-300 md:hover:scale-105 flex-shrink-0">
+            Join Now
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-gradient-to-l from-[#cf3270] to-[#8f174d] py-12">
+      <div class="max-w-[1300px] mx-auto px-4">
+        <div class="flex flex-col gap-6 pb-6 border-b border-[#ffffff44]">
+          <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+            <div class="w-[140px] h-[90px] bg-[url('./image/TheDesaiFoundation-log0.webp')] bg-center bg-contain bg-no-repeat flex-shrink-0"></div>
+            <p class="text-[15px] md:text-[18px] font-bold text-[#e8e8e8] leading-[130%] flex-1">The Desai Foundation empowers women and children through community programming to elevate health, livelihood, and menstrual equity in rural India.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+            <button class="w-[170px] h-[55px] bg-[#ffffff] text-[#cf3270] font-bold rounded-full text-[17px] capitalize md:transition md:duration-300 md:hover:scale-105">Donate now</button>
+            <div>
+              <h1 class="text-[28px] md:text-[40px] text-[#ffffff] font-bold">US | India</h1>
+              <p class="text-[13px] md:text-[16px] text-[#e8e8e8] font-bold">USA Office: 300 Tradecenter, Suite 3450 Woburn, MA 01801</p>
+              <p class="text-[13px] md:text-[16px] font-bold text-[#e8e8e8]">Call: +1-(##00)-1111-23</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-8">
+          <div>
+            <h1 class="text-[18px] font-bold text-[#e8e8e8] mb-3">About</h1>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Our Mission</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Our Story</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Our Team</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Board of Directors</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Leadership Council</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Advisors</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Annual Reports</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Financial Statements</h2>
+          </div>
+          <div>
+            <h1 class="text-[18px] font-bold text-[#ffffff] mb-3">What We Do</h1>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Health</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Heroes for Humanity</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Bal Health Mela</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Health & Hygiene Awareness</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Cancer Checkup Camps</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Vision Checkup Camps</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Menstrual Equity</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Pledge Your Period</h2>
+          </div>
+          <div>
+            <h1 class="text-[18px] font-bold text-[#e8e8e8] mb-3">Take Action</h1>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Donate Now</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Double Your Donation</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Our Team</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Visit our Program</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Location</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Get Involved</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Partner With Us</h2>
+            <h2 class="text-[14px] font-bold text-[#e8e8e8] py-1">Privacy Policy</h2>
+          </div>
+          <div>
+            <h1 class="text-[18px] font-bold text-[#e8e8e8] mb-3">Livelihood</h1>
+            <h2 class="text-[14px] font-bold text-[#f2f2f2] py-1">Sewing Skill Training</h2>
+            <h2 class="text-[14px] font-bold text-[#f2f2f2] py-1">Banking & Saving Education</h2>
+            <h2 class="text-[14px] font-bold text-[#f2f2f2] py-1">Computer Skill Training</h2>
+            <h2 class="text-[14px] font-bold text-[#f2f2f2] py-1">Entrepreneurship Training</h2>
+            <h2 class="text-[14px] font-bold text-[#f2f2f2] py-1">Asani Sanitary Napkin Program</h2>
+          </div>
+          <div>
+            <h1 class="text-[18px] font-bold text-[#f2f2f2] mb-3">Contact</h1>
+            <div class="flex items-center gap-3 py-2">
+              <a href="https://web.facebook.com/DesaiFoundation/?_rdc=1&_rdr#"><i class="fa-brands fa-facebook text-[#f2f2f2] text-[20px]"></i></a>
+              <h1 class="text-[16px] text-[#ffffff] font-bold">FACEBOOK</h1>
+            </div>
+            <div class="flex items-center gap-3 py-2">
+              <a href="https://www.instagram.com/desaifoundation/"><i class="fa-brands fa-instagram text-[#f2f2f2] text-[20px]"></i></a>
+              <h1 class="text-[16px] text-[#ffffff] font-bold">INSTAGRAM</h1>
+            </div>
+            <div class="flex items-center gap-3 py-2">
+              <a href="https://www.linkedin.com/company/unavailable/"><i class="fa-brands fa-linkedin-in text-[#f2f2f2] text-[20px]"></i></a>
+              <h1 class="text-[16px] text-[#ffffff] font-bold">LINKEDIN</h1>
+            </div>
+            <div class="flex items-center gap-3 py-2">
+              <a href="tel:1-(781)-270-3655"><i class="fa-solid fa-phone text-[#f2f2f2] text-[20px]"></i></a>
+              <h1 class="text-[16px] text-[#f2f2f2] font-bold">CALL Line</h1>
+            </div>
+            <a href="contact.html" class="w-[140px] h-[38px] bg-[#ffffff] text-[#cf3270] font-bold mt-4 rounded-full text-[15px] md:transition md:duration-300 md:hover:scale-105 flex items-center justify-center">Contact Us</a>
+          </div>
+        </div>
+        <div class="border-t border-[#ffffff44] mt-8 pt-5 text-center">
+          <h1 class="text-[16px] text-[#f2f2f2] font-semibold">© 2026 Desai Foundation. All Rights Reserved. | Contact | Privacy Policy</h1>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
